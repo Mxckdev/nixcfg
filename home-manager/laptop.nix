@@ -70,10 +70,7 @@
   home.packages = with pkgs; [
     nixd
     nil
-    kitty
     zed-editor
-    Hyprland
-    cmake
   ];
 
   # Enable home-manager and git
@@ -90,6 +87,10 @@
   };
 
   services.flatpak.enable = true;
+
+  programs.fish.enable = true;
+  programs.foot.enableFishIntegration = true;
+  programs.foot.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

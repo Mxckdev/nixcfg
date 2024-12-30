@@ -23,6 +23,12 @@ in {
         enable = true;
         settings = {
           "org/gnome/shell" = {
+            favorite-apps = [
+              "org.mozilla.firefox.desktop"  # Firefox (Flatpak)
+              "com.discordapp.DiscordCanary.desktop"  # Discord Canary (Flatpak)
+              "foot.desktop"  # Foot terminal (non-Flatpak)
+              "zededitor.desktop"  # Zed Editor (non-Flatpak)
+            ];
             disable-user-extensions = false; # enables user extensions
             enabled-extensions = [
               "hue-lights@chlumskyvaclav.gmail.com"
