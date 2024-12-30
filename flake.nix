@@ -44,7 +44,11 @@
         specialArgs = {inherit inputs outputs;
         hostname = "laptop";
         };
-        modules = [./nixos/laptop/configuration.nix];
+        modules = [
+          ./nixos/laptop/configuration.nix
+          inputs.disko.nixosModules.disko
+
+        ];
       };
 
       laptop-hypr = nixpkgs.lib.nixosSystem {

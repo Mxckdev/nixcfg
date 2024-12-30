@@ -12,7 +12,7 @@
     ./cli
     ./desktop
     ./flatpak
-    #./dotfiles
+    ./dotfiles
 
   ];
 
@@ -27,6 +27,7 @@
       fonts.enable = true;
       gnome.enable = true;
       flatpak.enable = true;
+      mpv.enable = true;
     };
   };
 
